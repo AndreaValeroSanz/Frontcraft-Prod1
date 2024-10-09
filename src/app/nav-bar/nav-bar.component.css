@@ -1,0 +1,22 @@
+.navbarstyle{
+  background-color: gray;
+  color: aliceblue;
+
+  height: max-content;
+  width: max(100vw);
+  border-radius: 6px;
+  list-style: none;
+
+}
+
+
+.text{
+  display: flex;
+  gap: max(20rem, 30rem);
+  text-align: center;
+place-content: center;
+}
+
+.text:hover{
+  color: black;
+}
