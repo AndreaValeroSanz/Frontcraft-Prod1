@@ -58,3 +58,8 @@
     object-fit: contain; /* Ensures the image fits within the div */
     filter: grayscale(100%);
 }
+/* Style when the card is enlarged */
+.card.enlarged {
+    width: 500px; /* Enlarged width */
+    height: 1000px; /* Enlarged height */
+  }
