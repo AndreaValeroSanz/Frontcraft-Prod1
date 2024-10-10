@@ -1,41 +1,51 @@
-.search{
+.Search{
     width: 412px;
     display: flex;
     align-items: center;
     padding: 14px;
     border-radius: 8px;
-    background-color: lightgrey;
+    color: black;
     height: 80px;
-    transition: box-shadow 0.25;
     margin-top: 1146px;
     margin-left: 49px;
+    background-color: lightgrey;
+    color: whitesmoke;
+ }
 
- }
- .search:focus-within{
-    box-shadow: 0 0 2px rgba(0,0,0,0.75);
- }
+ 
 .search-input{
 font-size: 16px;
 font-family: "glacial indifference";
-color: #333333;
+font-style: italic;
+color: black;
 margin-left: 14px;
 border: none;
 outline: none;
-background: transparent;
+background-color: transparent;
 }
 .search-input::placeholder{
-    color: rgba(0,0,0,0.5);
+    color: whitesmoke;
 }
-.search-icon{
-    color: rgba(0,0,0,0.5);
+
+.search-input:hover{
+    font-size: 16px;
+    font-family: "glacial indifference";
+    font-style: italic;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-color: black;
+    outline: black;
 }
+
 nav{
-    margin-left: 49px;
-    margin-top: 1281px;
-    height: 80px;
-    width: 412px;
-    background-color: lightgrey;
-    color: rgba(0,0,0,0.5);
+margin-left: 0px;
+margin-top: 1281px;
+height: 80px;
+width: 412px;
+
+
+
 }
 .menu-horizontal{
     margin-top: 1281px;
@@ -44,23 +54,51 @@ nav{
     width: 412px;
     background-color: lightgrey;
     color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    
+}
+
+    
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: underline;
 
 }
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+}
+
+.menu-horizontal > li:hover{
+    background-color: white;
+}
+
 .menu-vertical{
- position:absolute;
+ position: absolute;
  display: none;
  list-style: none;
- width: 412px;
- background-color: antiquewhite;
+ width: 200px;
+ 
 }
 .menu-horizontal li:hover .menu-vertical{
     display: block;
 }
 .menu-vertical li:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
+    color: whitesmoke;
+
 }
 .menu-vertical{
     display: block;
     color: rgba(0,0,0,0.5);
     text-decoration: none;
+    background-color: white;
+    margin-left: 49px;
+    border-radius: 8px;
+    border: 1px solid;
+
 }
