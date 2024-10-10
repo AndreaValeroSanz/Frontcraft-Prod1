@@ -1,44 +1,66 @@
-body{
-    background: linear-gradient(white, dimgray);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 49px;
- }
- h1{
-    color: black;
-
- }
-
- #Searchbar{
-    background-color: gray;
-    color: black;
-    font-family: "glacial indifference";
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    border: 1px solid;
+.search{
     width: 412px;
-    height: 80px;
-    margin-top: 1146px;
-    text-align: left;
-    border-radius: 8px;   
- }
-
- #Categorias{
-    background-color: gray;
-    color:black;
-    font-family: "glacial indifference";
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    border: 1px solid;
-    width: 412px;
-    height: 80px;
-    margin-top: 1281px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 14px;
     border-radius: 8px;
+    background-color: lightgrey;
+    height: 80px;
+    transition: box-shadow 0.25;
+    margin-top: 1146px;
+    margin-left: 49px;
 
  }
- li{
-    text-align: left;
-    }
+ .search:focus-within{
+    box-shadow: 0 0 2px rgba(0,0,0,0.75);
+ }
+.search-input{
+font-size: 16px;
+font-family: "glacial indifference";
+color: #333333;
+margin-left: 14px;
+border: none;
+outline: none;
+background: transparent;
+}
+.search-input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+.search-icon{
+    color: rgba(0,0,0,0.5);
+}
+nav{
+    margin-left: 49px;
+    margin-top: 1281px;
+    height: 80px;
+    width: 412px;
+    background-color: lightgrey;
+    color: rgba(0,0,0,0.5);
+}
+.menu-horizontal{
+    margin-top: 1281px;
+    margin-left: 49px;
+    height: 80px;
+    width: 412px;
+    background-color: lightgrey;
+    color: rgba(0,0,0,0.5);
+
+}
+.menu-vertical{
+ position:absolute;
+ display: none;
+ list-style: none;
+ width: 412px;
+ background-color: antiquewhite;
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: lightgray;
+}
+.menu-vertical{
+    display: block;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+}
