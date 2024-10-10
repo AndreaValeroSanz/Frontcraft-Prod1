@@ -1,0 +1,34 @@
+.navbarstyle {
+  background-color: lightgray;
+  height: max-content;
+  width: max(100vw);
+  list-style: none;
+  padding: 0; /* Elimina el padding de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+}
+
+.text {
+  display: flex;
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  width: 100%; /* Ocupa todo el ancho del navbar */
+}
+
+.text li {
+  font-size: 24px; /* Tamaño de la fuente */
+  font-family: GlacialFont, sans-serif;
+  padding: 1rem; /* Espaciado alrededor del texto */
+  transition: color 0.3s ease; /* Transición suave para el color */
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.center {
+  flex-grow: 1; /* Permite que "Nuestro Club" ocupe más espacio */
+  text-align: center; /* Alinea el texto en el centro */
+}
+
+/* Hover individual */
+.hover-effect:hover {
+  color: white; /* Cambia el color al pasar el ratón por encima */
+}

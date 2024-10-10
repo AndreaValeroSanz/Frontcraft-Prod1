@@ -1,12 +1,15 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import	{JugadorCardModule} from './jugador-card/jugador-card.module';
+import	{NavBarComponent} from './nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, JugadorCardModule, NavBarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Frontcraft-Prod1';
