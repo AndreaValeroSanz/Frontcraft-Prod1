@@ -1,18 +1,17 @@
 <head>
     <title>Basketball Card</title>
 </head>
-<div class="card" [ngClass]="getClasses()" (click)="toggleCardSize()">
-
-    <div class="card-inner">
-      <div class="card-front">
-        <img class="image" src="Players/playerCard1.webp" alt="Kevin Durant Card">
-      </div>
-      <div class="card-back">
-        <h3>jayson tatum</h3>
-        <p>Points per game: 27.0</p>
-        <p>Rebounds per game: 7.1</p>
-        <p>Assists per game: 5.7</p>
-      </div>
+<div id="players-section" class="card" [ngClass]="getClasses()" (click)="toggleCardSize()">
+  <div class="card-inner">
+    <div class="card-front">
+      <img class="image" src="Players/playerCard1.webp" alt="Kevin Durant Card">
+    </div>
+    <div class="card-back">
+      <h3>Jayson Tatum</h3>
+      <p>Points per game: 27.0</p>
+      <p>Rebounds per game: 7.1</p>
+      <p>Assists per game: 5.7</p>
     </div>
   </div>
+</div>
   
