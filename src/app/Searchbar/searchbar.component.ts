@@ -8,6 +8,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './searchbar.component.html',
   styleUrl: './searchbar.component.css'
 })
-export class AppComponent {
+export class AppSearchbar {
   title = 'Frontcraft-Prod1';
 }
