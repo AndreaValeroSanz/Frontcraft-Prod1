@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-searchbar',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './searchbar.component.html',
+  styleUrl: './searchbar.component.css'
 })
-export class AppComponent {
+export class AppSearchbar {
   title = 'Frontcraft-Prod1';
 }

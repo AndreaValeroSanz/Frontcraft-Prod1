@@ -1,0 +1,17 @@
+-PlayersComponent
+	-PlayerCard (hover estadisitcas)
+
+-Detailcomponent
+	-PlayerCardBack
+		-MediaComponent
+
+-SearchComponent
+	-Searchbar
+	-Categories
+
+-NavComponent
+	-Navbar
+
+-HeroComponent
+	-Flechita
+	-Logo
