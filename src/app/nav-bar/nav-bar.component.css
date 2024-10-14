@@ -12,6 +12,7 @@
   justify-content: space-around; /* Distribuye el espacio entre los elementos */
   align-items: center; /* Centra los elementos verticalmente */
   width: 100%; /* Ocupa todo el ancho del navbar */
+  color: black;
 }
 
 .text li {
@@ -23,12 +24,18 @@
   margin-left: 45px;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+  color: gray; /* Cambia el color al pasar el ratón por encima */
+  transition: 0.3s;
+}
 .center {
   flex-grow: 1; /* Permite que "Nuestro Club" ocupe más espacio */
   text-align: center; /* Alinea el texto en el centro */
 }
 
-/* Hover individual */
-.hover-effect:hover {
-  color: white; /* Cambia el color al pasar el ratón por encima */
-}
