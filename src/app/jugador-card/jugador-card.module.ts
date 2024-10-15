@@ -3,10 +3,14 @@ import { CommonModule } from '@angular/common';
 import { JugadorCardComponent } from './jugador-card.component';
 
 @NgModule({
-  declarations: [JugadorCardComponent],
-  imports: [
-    CommonModule // Import CommonModule here
+  declarations: [
+    JugadorCardComponent  // Declare your component here
   ],
-  exports: [JugadorCardComponent] // Export the component if needed elsewhere
+  imports: [
+    CommonModule  // Import CommonModule for directives like *ngIf, *ngFor
+  ],
+  exports: [
+    JugadorCardComponent  // Export the component so other modules can use it
+  ]
 })
 export class JugadorCardModule { }

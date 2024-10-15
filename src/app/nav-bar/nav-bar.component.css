@@ -12,6 +12,7 @@
   justify-content: space-around; /* Distribuye el espacio entre los elementos */
   align-items: center; /* Centra los elementos verticalmente */
   width: 100%; /* Ocupa todo el ancho del navbar */
+  color: black;
 }
 
 .text li {
@@ -23,12 +24,37 @@
   margin-left: 45px;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  font-family: Bahnschrift, sans-serif;
+  margin-left: 45px;
+  margin-right: 45px;
+  align-content: center;
+
+}
+
+a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
 .center {
   flex-grow: 1; /* Permite que "Nuestro Club" ocupe más espacio */
   text-align: center; /* Alinea el texto en el centro */
 }
 
-/* Hover individual */
-.hover-effect:hover {
-  color: white; /* Cambia el color al pasar el ratón por encima */
-}

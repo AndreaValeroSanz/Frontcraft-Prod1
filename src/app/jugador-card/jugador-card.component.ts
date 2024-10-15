@@ -1,21 +1,20 @@
-// src/app/jugador-card/jugador-card.component.ts
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-jugador-card',
   templateUrl: './jugador-card.component.html',
   styleUrls: ['./jugador-card.component.css']
 })
-export class JugadorCardComponent {
-  isEnlarged = false;
+export class JugadorCardComponent implements AfterViewInit {
+  @ViewChild('card') cardElement!: ElementRef;
 
-  getClasses(): any {
-    return {
-      enlarged: this.isEnlarged
-    };
+  ngAfterViewInit() {
+    // Check if the cardElement is correctly referenced
+    console.log(this.cardElement);
   }
 
-  toggleCardSize(): void {
-    this.isEnlarged = !this.isEnlarged;
+  toggleCardSize() {
+    const card = this.cardElement.nativeElement;
+    card.classList.toggle('enlarged');
   }
 }
