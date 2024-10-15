@@ -30,6 +30,9 @@ a{
   display: inline-block;
   position: relative;
   font-family: Bahnschrift, sans-serif;
+  margin-left: 45px;
+  margin-right: 45px;
+  align-content: center;
 
 }
 
