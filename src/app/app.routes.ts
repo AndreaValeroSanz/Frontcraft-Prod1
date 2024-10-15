@@ -4,10 +4,11 @@ import {JugadorCardComponent} from './jugador-card/jugador-card.component';
 import {AboutComponent} from './about/about.component';
 import {StatisticsComponent} from './statistics/statistics.component';
 import {CardGridComponent} from './card-grid/card-grid.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-  { path: '', component: CardGridComponent },
-  { path: 'home', component: CardGridComponent },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'statistics', component: StatisticsComponent }
 
