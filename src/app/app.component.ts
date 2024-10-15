@@ -9,7 +9,7 @@ import {HeroComponent} from './hero/hero.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, JugadorCardModule, NavBarComponent, HeroComponent], // Update this line
+  imports: [RouterOutlet, JugadorCardModule, NavBarComponent, HeroComponent, CardGridModule], // Update this line
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
