@@ -1,7 +1,7 @@
 <div class="card" #card (click)="toggleCardSize()">
   <div class="card-inner">
     <div class="card-front">
-      <img class="image" src="Players/playerCard1.webp" alt="Kevin Durant Card">
+      <img class="image" [src]="playerData.image" [alt]="playerData.name + ' Card'">
     </div>
     <div class="card-back">
       <app-detail [name]="playerData.name" [ppg]="playerData.ppg" [rpg]="playerData.rpg" [apg]="playerData.apg">
