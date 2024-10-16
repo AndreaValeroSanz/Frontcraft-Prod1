@@ -68,11 +68,8 @@ export class CardGridComponent {
       ppg: '22.0',
       rpg: '3.5',
       apg: '4.5'
-    }
+    },
 
-
-
-    
   ];
   cards = Array(9).fill(0);  // This will give us an array with 9 elements
 }
