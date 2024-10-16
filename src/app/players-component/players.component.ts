@@ -1,20 +1,17 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, Input } from '@angular/core';
 import { DetailComponent } from '../detail-component/detail.component';
 
 @Component({
   selector: 'app-players',
   templateUrl: './players.component.html',
   styleUrls: ['./players.component.css'],
+  standalone: true,
+  imports: [DetailComponent]
 })
 export class PlayersComponent implements AfterViewInit {
   // ...
 
-  playerData = {
-    name: 'Jayson Tatum',
-    ppg: '27.0',
-    rpg: '7.1',
-    apg: '5.7'
-  };
+  @Input() playerData: any;
 
   // ...
 

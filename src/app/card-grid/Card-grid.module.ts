@@ -1,11 +1,12 @@
+// Card-grid.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardGridComponent } from './card-grid.component';
-import { PlayersModule } from '../players-component/players.module';
+import { PlayersComponent } from '../players-component/players.component';
 
 @NgModule({
   declarations: [CardGridComponent],
-  imports: [CommonModule, PlayersModule],
+  imports: [CommonModule, PlayersComponent],
   exports: [CardGridComponent]
 })
 export class CardGridModule { }
