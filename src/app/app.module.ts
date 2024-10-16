@@ -6,12 +6,13 @@ import { CardGridComponent } from './card-grid/card-grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     CardGridComponent  // Declare the CardGridComponent here
   ],
   imports: [
     BrowserModule,
-    JugadorCardModule  // Import the JugadorCardModule so you can use its components
+    JugadorCardModule,
+    AppComponent,
+    // Import the JugadorCardModule so you can use its components
   ],
   providers: [],
   bootstrap: [AppComponent]
