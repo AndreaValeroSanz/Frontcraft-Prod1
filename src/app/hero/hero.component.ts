@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
   exploreTeam() {
-    const element = document.getElementById('players-section');
+    const element = document.getElementById('main-section');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
   scrollToPlayers() {
-    const element = document.getElementById('players-section');
+    const element = document.getElementById('main-section');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
