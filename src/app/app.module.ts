@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { JugadorCardModule } from './jugador-card/jugador-card.module';
+import { JugadorCardModule } from './players-component/players.module';
 import { CardGridComponent } from './card-grid/card-grid.component';
 
 @NgModule({
