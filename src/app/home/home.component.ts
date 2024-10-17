@@ -11,4 +11,11 @@ import { CardGridModule } from '../card-grid/Card-grid.module';
 })
 export class HomeComponent {
 
+  goUp() {
+    const element = document.getElementById('hero-section');
+    if(element){
+      element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    }
+
+  }
 }

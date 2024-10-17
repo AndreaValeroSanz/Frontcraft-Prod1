@@ -1,0 +1,20 @@
+.flecha-arriba {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 120px; /* Asegúrate de que ocupe toda la altura de la pantalla */
+  margin-bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+}
+
+.flecha-arriba img {
+  width: 50px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.flecha-arriba img:hover {
+  opacity: 1;
+  transform: translateY(10px);
+}
