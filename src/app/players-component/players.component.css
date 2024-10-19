@@ -39,8 +39,8 @@
 }
 
 .card-back {
-    background: #333; /* Background color for the stats */
-    color: white;
+    background: linear-gradient(80deg, #edebe7, #656a6b); /* Background color for the stats */
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,12 @@
     padding: 10px;
     box-sizing: border-box; /* Ensures padding does not expand the box */
     text-align: center;
-    font-size: 12px; /* Adjust font size to fit the card */
+    font-size: 9px; /* Adjust font size to fit the card */
+    line-height: 0.5%;
+}
+
+h6 {
+    font-size: 13px;  
 }
 
 .image {
@@ -61,5 +66,5 @@
 /* Style when the card is enlarged */
 .card.enlarged {
     width: 25vh; /* Enlarged width */
-    height: 30vh; /* Enlarged height */
+    height: 35vh; /* Enlarged height */
   }

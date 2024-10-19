@@ -22,6 +22,9 @@ export class PlayersComponent implements AfterViewInit {
       this.detailComponentRef.ppg = this.playerData.ppg;
       this.detailComponentRef.rpg = this.playerData.rpg;
       this.detailComponentRef.apg = this.playerData.apg;
+      this.detailComponentRef.height = this.playerData.height;
+      this.detailComponentRef.weight = this.playerData.weight;
+      this.detailComponentRef.age = this.playerData.age;
     }
   }
 
