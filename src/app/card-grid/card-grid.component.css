@@ -1,13 +1,15 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
-    gap: 5px;  /* Adds space between the cards */
-    padding: 5px;
-  }
-  
-  .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  max-height: 70vh; /* Ajusta la altura máxima del contenedor */
+  overflow-y: auto; /* Permite el scroll vertical si el contenido es más alto que el contenedor */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 5px; /* Espacio entre las cards */
+  padding: 10px;
+}
+
+.grid-item {
+
+
+  padding: 5px;
+  border-radius: 5px;
+}

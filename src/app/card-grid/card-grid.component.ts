@@ -50,7 +50,7 @@ export class CardGridComponent {
       ppg: '25.0',
       rpg: '5.9',
       apg: '6.0'
-    },  
+    },
     {
       name: 'Nikola Jokic',
       ppg: '23.0',
@@ -62,7 +62,20 @@ export class CardGridComponent {
       ppg: '23.0',
       rpg: '3.0',
       apg: '5.0'
-    }, 
+    },
+    {
+      name: 'Joel Embiid',
+      ppg: '22.0',
+      rpg: '3.5',
+      apg: '4.5'
+    },
+
+    {
+      name: 'Joel Embiid',
+      ppg: '22.0',
+      rpg: '3.5',
+      apg: '4.5'
+    },
     {
       name: 'Joel Embiid',
       ppg: '22.0',
@@ -71,8 +84,6 @@ export class CardGridComponent {
     }
 
 
-
-    
   ];
-  cards = Array(9).fill(0);  // This will give us an array with 9 elements
+  cards = Array(11).fill(0);  // This will give us an array with 9 elements
 }
