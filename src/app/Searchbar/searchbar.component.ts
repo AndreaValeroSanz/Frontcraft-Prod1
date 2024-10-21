@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common'; // Asegúrate de tener CommonModule importado
 
 @Component({
   selector: 'app-searchbar',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './searchbar.component.html',
-  styleUrl: './searchbar.component.css'
+  styleUrls: ['./searchbar.component.css']
 })
 export class AppSearchbar {
-  title = 'Frontcraft-Prod1';
+  isDropdownVisible = false;
+
+  // Esta función alterna la visibilidad del menú
+  toggleDropdown() {
+    this.isDropdownVisible = !this.isDropdownVisible;
+  }
 }
