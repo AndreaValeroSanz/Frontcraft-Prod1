@@ -1,5 +1,5 @@
 <!-- src/app/hero/hero.component.html -->
-<div class="hero-container">
+<div class="hero-container" id="hero-section">
   <!-- Logo del equipo -->
   <div class="logo">
     <img src="assets/logo.png" alt="Logo de Frontcraft BC" title="Frontcraft Basketball Club">
@@ -11,7 +11,7 @@
     <p class="hero-subtitle">Where Passion Meets Excellence on the Court</p>
 
     <!-- Botón de llamada a la acción (Call to Action) -->
-    <button class="hero-cta" (click)="exploreTeam()">Explore Our Team</button>
+    <button class="hero-cta"  routerLink="/" (click)="exploreTeam()">Explore our Team</button>
   </div>
 
   <!-- Flecha hacia abajo -->

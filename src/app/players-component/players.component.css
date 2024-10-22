@@ -8,6 +8,7 @@
     padding: 5px;
     margin: 20px;
     box-shadow: -10px 10px 4px rgba(0, 0, 0, 1), 0 6px 6px rgba(0, 0, 0, 1);
+    transition: all 0.2s ease;
 }
 
 .card-inner {
@@ -39,8 +40,8 @@
 }
 
 .card-back {
-    background: #333; /* Background color for the stats */
-    color: white;
+    background: linear-gradient(80deg, #edebe7, #656a6b); /* Background color for the stats */
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +50,12 @@
     padding: 10px;
     box-sizing: border-box; /* Ensures padding does not expand the box */
     text-align: center;
-    font-size: 12px; /* Adjust font size to fit the card */
+    font-size: 9px; /* Adjust font size to fit the card */
+    line-height: 0.5%;
+}
+
+h6 {
+    font-size: 13px;  
 }
 
 .image {
@@ -61,5 +67,20 @@
 /* Style when the card is enlarged */
 .card.enlarged {
     width: 25vh; /* Enlarged width */
-    height: 30vh; /* Enlarged height */
+    height: 35vh; /* Enlarged height */
+}
+
+.card-back .button {
+    background-color: #ffffff; 
+    border: none;
+    position: absolute;
+    bottom: 1px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0); 
+    padding: 7px 10px; 
+    text-align: center; 
+    display: block; 
+    font-size: 7px; 
+    margin: 2px 1px; 
+    cursor: pointer; 
   }
