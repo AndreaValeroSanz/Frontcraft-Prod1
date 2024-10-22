@@ -13,6 +13,9 @@ export class DetailComponent {
   @Input() ppg: string = '';
   @Input() rpg: string = '';
   @Input() apg: string = '';
+  @Input() height: string = '';
+  @Input() weight: string = '';
+  @Input() age: string = '';
 
   constructor() { }
 

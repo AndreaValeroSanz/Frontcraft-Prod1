@@ -1,15 +1,29 @@
 .grid-container {
-  max-height: 70vh; /* Ajusta la altura máxima del contenedor */
-  overflow-y: auto; /* Permite el scroll vertical si el contenido es más alto que el contenedor */
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-  gap: 5px; /* Espacio entre las cards */
-  padding: 10px;
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas por fila */
+  column-gap: 20px; /* Espacio horizontal entre las columnas (reduce este valor para juntar más las cartas) */
+  row-gap: 15px; /* Espacio vertical entre las filas, puedes ajustarlo si lo necesitas */
+  justify-content: flex-start; /* Alinea las cartas hacia la izquierda (o derecha según el diseño que desees) */
+  padding-right: 500px;
+  padding-left: 500px; /* Añade un poco de espacio a la derecha si es necesario */
+  max-height: 70vh; /* Ajusta la altura máxima del contenedor */
+  overflow-y: auto;
 }
 
 .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.card {
+  width: 100%; /* Asegura que las cartas ocupen el espacio disponible */
+  max-width: 150px; /* Tamaño máximo de las cartas */
+  height: auto;
+  transition: transform 0.3s ease;
+}
 
-  padding: 5px;
-  border-radius: 5px;
+.card-inner {
+  padding: 0;
+  margin: 0;
 }
