@@ -1,13 +1,25 @@
+<!-- Contenedor principal de la tarjeta con la clase "card" -->
 <div class="card" #card (click)="toggleCardSize()">
+  <!-- Contenedor interno que permite el efecto de volteo 3D -->
   <div class="card-inner">
+
+    <!-- Lado frontal de la tarjeta, que muestra la imagen del jugador -->
     <div class="card-front">
+      <!-- Imagen del jugador, usando los datos del objeto "playerData" -->
       <img class="image" [src]="playerData.image" [alt]="playerData.name + ' Card'">
     </div>
+
+    <!-- Lado trasero de la tarjeta, que muestra detalles del jugador -->
     <div class="card-back">
-      <app-detail [name]="playerData.name" [ppg]="playerData.ppg" [rpg]="playerData.rpg" [apg]="playerData.apg" 
-      [height]="playerData.height" [weight]="playerData.weight"  [age]="playerData.age" ></app-detail>
+      <!-- Componente de detalles que recibe varias propiedades del jugador como entrada -->
+      <app-detail [name]="playerData.name" [ppg]="playerData.ppg" [rpg]="playerData.rpg" [apg]="playerData.apg"
+                  [height]="playerData.height" [weight]="playerData.weight" [age]="playerData.age"></app-detail>
+
+      <!-- Botón que aparece al agrandar la tarjeta para ver un modal con jugadas destacadas -->
       <button class="button" (click)="openModal()" *ngIf="isCardEnlarged">MEJORES JUGADAS</button>
     </div>
   </div>
 </div>
+
+<!-- Modal de pantalla completa que muestra jugadas destacadas del jugador -->
 <app-fullscreen-modal *ngIf="showModal" (buttonClicked)="closeModal()"></app-fullscreen-modal>
