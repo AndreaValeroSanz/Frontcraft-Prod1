@@ -11,6 +11,7 @@ import { CardGridModule } from '../card-grid/Card-grid.module';
 })
 export class HomeComponent {
 
+  //Funcion para que al pulsar la flecha, te redirecione hacia la parte de arriba de la pagina
   goUp() {
     const element = document.getElementById('hero-section');
     if(element){
