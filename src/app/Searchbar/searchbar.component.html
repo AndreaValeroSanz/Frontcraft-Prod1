@@ -1,9 +1,11 @@
-<form class="search-form">
+<!-- searchbar.component.html -->
+<form class="search-form" (ngSubmit)="applyFilter()">
     <div class="search-bar">
-        <input class="search-input" type="search" placeholder="Buscar jugador...">
-        <button class="search-btn" type="submit">
-            <i class="fa fa-search"></i>
-        </button>
+      <input class="search-input" [(ngModel)]="nameFilter" name="name" type="text" placeholder="Buscar por nombre...">
+      <input class="search-input" [(ngModel)]="ageFilter" name="age" type="number" placeholder="Buscar por edad...">
+      <button class="search-btn" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
     </div>
 </form>
 
