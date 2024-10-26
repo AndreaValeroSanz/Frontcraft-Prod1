@@ -34,7 +34,7 @@ h1 {
 }
 
 /* Estilos específicos para el iframe dentro de .video-container */
-.video-container iframe {
+.video-container video {
   position: absolute;                   /* Posiciona el iframe para ocupar todo el contenedor */
   top: 0;
   left: 0;
