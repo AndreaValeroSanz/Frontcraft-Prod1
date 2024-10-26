@@ -16,6 +16,7 @@ export class AppSearchbar {
   ageFilter: number | null = null; // Almacena el filtro de edad; puede ser un número o nulo
 
   @Output() filterChange = new EventEmitter<{ name: string, age: number | null }>();
+
   // Emite eventos cuando se aplican filtros, con un objeto que contiene el nombre y la edad
 
   toggleDropdown() {
@@ -24,7 +25,12 @@ export class AppSearchbar {
   }
 
   applyFilter() {
-    this.filterChange.emit({ name: this.nameFilter, age: this.ageFilter });
+    this.filterChange.emit({name: this.nameFilter, age: this.ageFilter});
     // Emite el evento de cambio de filtro con los valores actuales de nombre y edad
+    const element = document.getElementById('main-section'); // Selecciona el elemento con id "main-section"
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'});       // Desplazamiento suave hacia el elemento si existe
+    }
   }
 }
+
