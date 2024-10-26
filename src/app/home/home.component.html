@@ -1,10 +1,10 @@
 <div class="row">
-
+  <app-searchbar (filterChange)="onFilterChange($event)"></app-searchbar>
     <div class="row" id="main-section">
-        
 
-        <div class="col-lg-10">
-            <app-card-grid></app-card-grid>
+
+        <div class="col-lg-10" id="grid-cards">
+          <app-card-grid [players]="filteredPlayers" ></app-card-grid>
         </div>
   <div class="flecha-arriba" (click)="goUp()" title="Scroll Down">
     <img src="assets/flecha-arriba.png" alt="Scroll up to explore">

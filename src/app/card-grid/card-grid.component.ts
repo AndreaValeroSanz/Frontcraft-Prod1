@@ -7,11 +7,13 @@ import { Component, Input } from '@angular/core';
   template: `
     <div class="grid-container">
       <app-players class="grid-item"
-                   *ngFor="let player of players"  // Itera sobre cada jugador en la lista 'players'
-      [playerData]="player">          // Pasa cada jugador como 'playerData' al componente hijo <app-players>
+                   *ngFor="let player of players"
+      [playerData]="player">
     </app-players>
     </div>
+
   `,
+
   styleUrls: ['./card-grid.component.css']  // Estilos específicos para este componente
 })
 
