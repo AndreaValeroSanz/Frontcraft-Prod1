@@ -23,10 +23,10 @@
   transform: translateY(10px);      /* Mueve la flecha ligeramente hacia abajo al hacer hover */
 }
 
-#grid-cards{
+.grid-cards{
   position: relative;
   display: grid;
   justify-content: center;
   align-items: flex-end;
-
+  margin-left: 100px;
 }
